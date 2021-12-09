@@ -1,0 +1,35 @@
+create table user
+(
+    id       int auto_increment
+        primary key,
+    title    varchar(20) charset utf8 not null,
+    cf_name  varchar(20) charset utf8 null,
+    luogu_id int default 0            not null
+);
+
+
+
+insert into user(title, cf_name, luogu_id) values('郑益', 'Anonytt', 283561);
+insert into user(title, cf_name, luogu_id) values('龚涵涛', 'Libm', 166623);
+insert into user(title, cf_name, luogu_id) values('燕彤', 'kele_', 226823);
+
+
+create table tp_rating
+(
+    id              int                      not null,
+    title       varchar(20) charset utf8 not null,
+    cf_name         varchar(20)              null,
+    cf_rating       int        default 0     null,
+    cf_solve_num    int        default 0     null,
+    luogu_id       int                      null,
+    luogu_solve_num int                      null,
+    is_success      tinyint(1) default 0     null,
+    description     varchar(255)             null,
+    time            varchar(20)              not null,
+    primary key (time, id)
+);
+
+
+
+
+

@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'rating.spiders'
 # USER_AGENT = 'rating (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
@@ -88,9 +88,10 @@ ITEM_PIPELINES = {
 
 
 # Mysql数据库的配置信息
-MYSQL_HOST = '127.0.0.1'
-MYSQL_DBNAME = 'acm'  # 数据库名字
-MYSQL_USER = 'root'  # 数据库账号
+MYSQL_HOST = "219.245.20.224"
+MYSQL_DBNAME = "tp6"  # 数据库名字
+MYSQL_USER = "root"  # 数据库账号
 # MYSQL_PASSWD = '1s3^]9tf6GCP'  # 数据库密码
-MYSQL_PASSWD = 'Yt8023..'
-MYSQL_PORT = 3306  # 数据库端口
+# MYSQL_PASSWD = 'Yt8023..'
+MYSQL_PASSWD = "123456"
+MYSQL_PORT = 3306
